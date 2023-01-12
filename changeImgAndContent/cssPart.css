@@ -1,0 +1,118 @@
+@media only screen and (max-width: 700px){
+    .detail{
+        width: 90%;
+        padding-bottom: 20px;
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100%;
+    min-width: 100%;
+    background-color: darkslategrey;
+}
+.container{
+    min-height: 100%;
+    min-width: 100%;
+    background-color: darkslategrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+h1{
+    color: black;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace;
+}
+h5{
+    font-size: 1.2rem;
+    color: black;
+    margin-top: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.detail{
+    position: relative;
+    height: 450px;
+    width: 600px;
+    background-color: darkslategrey;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 20px rgba(2, 2, 2, 0.7);
+}
+.detail:hover{
+    filter: brightness(1.1);
+    transition: 1s;
+}
+.pradip{
+    height: 110px;
+    width: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    left: 41%;
+    top: 35px;
+}
+.star{
+   color: chocolate;
+   position: absolute;
+   top: 41%;
+   left: 42%;
+}
+h3{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    top: 34%;
+    left: 33%;
+    cursor: pointer;
+}
+h3:hover{
+    color: darkmagenta;
+    transition: 2s;
+}
+.detail p{
+    position: absolute;
+    top: 48%;
+    left: 50px;
+    right: 50px;
+    font-size: 1.2em;
+    padding: 8px;
+}
+.leftArr{
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    cursor: pointer;
+    filter: brightness(.6);
+    left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightArr{
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    cursor: pointer;
+    filter: brightness(.6);
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

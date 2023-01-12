@@ -1,0 +1,61 @@
+body{
+    height: 98vh;
+    width: 98vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bulbOff{
+    height: 320px;
+    width: 240px;
+    background: url("https://thumbs.dreamstime.com/b/light-bulb-11371329.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+
+.bulbOn{
+    height: 300px;
+    width: 220px;
+    background: url("https://cdn.mos.cms.futurecdn.net/HaPnm6P7TZhPQGGUxtDjAg-1200-80.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+}
+
+.action.bulbOn{
+    visibility: hidden;
+}
+
+.on{
+    height: 35px;
+    width: 100px;
+    background-color: yellow;
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    cursor: pointer;
+}
+.off{
+    height: 35px;
+    width: 100px;
+    background-color: yellow;
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    cursor: pointer;
+}
