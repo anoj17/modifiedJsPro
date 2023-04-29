@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.main{
+    height: 550px;
+    position: relative;
+    width: 550px;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 69% 31% 24% 76% / 42% 53% 47% 58% ;
+    box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05),
+                25px 35px 30px rgba(0,0,0,0.05),
+                25px 30px 30px rgba(0,0,0,0.05),
+                inset -20px -20px 75px red;
+    transition: 1s;
+}
+
+input{
+    padding: 7px;
+    color: white;
+    border-radius: 30px;
+    border: transparent;
+    height: 35px;
+    width: 100%;
+    font-size: 1em;
+    background-color: #333;
+}
+
+.submit{
+    position: absolute;
+    top: 460px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: .8em;
+    border: transparent;
+    color: white;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    width: 100px;
+    background:red;
+    box-shadow: inset 1px 1px 10px #666;
+    cursor: pointer;
+    left: 220px;
+}
+.submit:hover{
+    width: 115px;
+    letter-spacing: 2px;
+}
+
+.inputs{
+    height: 450px;
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.inputs.first{
+    margin: 10px;
+}
+.error.first input{
+    border: 1px solid red;
+}
+
+.first small{
+    margin-left: 10px;
+    color: red;
+    visibility: hidden;
+}
+
+.first.error small{
+    visibility: visible;
+}
+
+.first{
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+.main:hover{
+    border-radius: 50%;
+}
