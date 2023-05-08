@@ -27,6 +27,27 @@ body{
                 inset -20px -20px 75px red;
     transition: 1s;
 }
+.formInput{
+    height: 230px;
+    width: 300px;
+    margin-top: 75px;
+}
+.inputs small{
+    color: red;
+    margin-left: 50px;
+    font-size: 15px;
+    margin-top: 20px;
+    visibility: hidden;
+}
+.error.inputs input{
+    border: 1px solid red;
+}
+.inputs .error small{
+    visibility: visible;
+}
+.inputs{
+    margin-top: 5px;
+}
 h2{
     position: absolute;
     font-size: 2em;
@@ -41,7 +62,7 @@ input{
     color: white;
     border-radius: 30px;
     border: transparent;
-    margin: 10px;
+    margin: 15px;
     height: 45px;
     width: 280px;
     font-size: 1em;
@@ -49,7 +70,7 @@ input{
 }
 .log{
     position: absolute;
-    top: 320px;
+    top: 330px;
     height: 45px;
     border-radius: 20px;
     font-size: 1em;

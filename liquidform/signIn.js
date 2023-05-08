@@ -10,6 +10,7 @@ const form = document.querySelector('.form');
 form.addEventListener('submit',(e) =>{
     e.preventDefault();
     validate();
+    submitForm();
 })
 
 const validate = () =>{
@@ -78,31 +79,37 @@ const setErrorMsg = (input,errorMsg) =>{
    small.innerText = errorMsg;
 }
 
-const setSuccess = async (input) =>{
+const setSuccess = (input) =>{
     const first = input.parentElement;
     first.classList.remove('error');
 
-    const formEl = new FormData(form);
-    const data = Object.fromEntries(formEl)
-    //const dataEl = JSON.stringify(data);
-   
-    const dataEl = {
-        name : "pradip"
-    }
+}
+const submitForm = async () => {
+ 
+    const fnameVal = fname.value.trim();
+const lnameVal = lname.value.trim();
+const phoneVal = phone.value.trim();
+const passwordVal = password.value.trim();
+const cpasswordVal = cpassword.value.trim();
 
-    console.log(dataEl)
+    const id = 20;
+    const data = {
+        fnameVal,lnameVal,phoneVal,passwordVal,cpasswordVal
+    }
+    console.log("hello",data)
+   
     await fetch("http://localhost:3000/users",{
         method: 'POST',
         headers:{
             'Content-Type':'application/json'
         },
-        body: JSON.stringify(dataEl)
+        body:JSON.stringify(data)
     })
     .then(res=>{
        return res.json();
     })
-    .then(result=>{
-        console.log("result",result)
+    .then(data=>{
+        console.log(data)
     })
     .catch(error=>{
         console.log("error",error)

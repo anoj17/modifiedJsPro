@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "fnameVal": "anoj",
+      "lnameVal": "ck",
+      "phoneVal": "9816146926",
+      "passwordVal": "anoj",
+      "cpasswordVal": "anoj",
+      "id": 21
+    },
+    {
+      "fnameVal": "pradip",
+      "lnameVal": "pariyar",
+      "phoneVal": "9816146926",
+      "passwordVal": "pradip",
+      "cpasswordVal": "pradip",
+      "id": 22
+    }
+  ]
+}
